@@ -9,11 +9,13 @@ body{
     width: 100vw;
     min-height: 100vh;
     position: relative;
+    background-color: #f1f1f1;
 }
 .wrapper{
     position: relative;
     width: 100vw;
     min-height: 100vh;
+    
 }
 .header{
     position: fixed;
@@ -21,10 +23,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #111;
+    background-color: #f1f1f1;
     padding: 12px 20px;
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #ccc;
     z-index: 10000;
+    box-shadow: -12px 0px 12px rgba(0,0,0,0.2);
 }
 
 .header_logo{
@@ -35,7 +38,7 @@ body{
     height: 100px; */
     margin-left: 4em;
     cursor: pointer;
-    color: #fff;
+    /* color: red; */
     font-size: 2em;
 }
 .header_nav{
@@ -51,17 +54,29 @@ body{
 }
 .header_nav ul li{
     margin: 0 15px;
+    /* background-color: red; */
+    padding: 5px 8px;
+    border-radius: 4px;
+    transition: 0.4s ease-in-out;
+}
+.header_nav ul li.active{
+    background-color: rgb(35, 103, 250);
+    transition:  0.3s ease-in-out;
+}
+.header_nav ul li.active a{
+    color: #f1f1f1;
 }
 .header_nav ul li a{
-    color: white;
+    color: rgb(35, 103, 250);
     text-decoration: none;
     font-size: 1.6em;
 }
 .header_search{
-    background-color: #fff;
+    background-color: transparent;
     margin-right: -2em;
     margin-bottom: 12px;
-    border-radius: 6px;
+    /* border-radius: 6px; */
+    border-bottom: 2px solid rgb(35, 103, 250);
 }
 .header_search form{
     position: relative;
@@ -72,6 +87,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: transparent;
 }
 .header_search .search_icon{
     text-align: center;
@@ -80,7 +96,7 @@ body{
 .header_search .search_icon i{
     cursor: pointer;
     font-size: 1em;
-    color: #111;
+    color: rgb(35, 103, 250);
 }
 
 .header_search form input{
@@ -90,10 +106,14 @@ body{
     border: none;
     border-radius: ;
     transition: 0.5s all;
-    border-right: 1px solid #ccc;
+    background-color: transparent;
+    /* border-right: 1px solid #ccc; */
+}
+.header_search.active {
+    border: 2px solid rgb(35, 103, 250);
 }
 .nav_icon{
-    color: #fff;
+    color: rgb(35, 103, 250);
     margin-right: 10px;
     cursor: pointer;
     display: none;
@@ -125,18 +145,22 @@ body{
 .banner_content h2{
     font-size: 6em;
     color: white;
-    text-shadow: 0 0 12px rgba(0,0,0);
+    text-shadow: 0 0 12px rgba(0,0,0),
+                 0 0 24px rgba(0,0,0),
+                 0 0 40px rgba(0,0,0),
+                 0 0 60px rgba(0,0,0);
+    margin-bottom: 30px;
 }
 .banner_btn{
     text-decoration: none;
-    background-color: red;
+    background-color: rgb(35, 103, 250);
     color: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 7px;
     font-weight: 700;
 }
 .banner_btn:hover{
-    background-color: darkred;
+    background-color: rgb(2, 38, 104);
     color: #fff;
 }
 
@@ -145,6 +169,8 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
+    background:  #f1f1f1;
+
 }
 .content_box{
     position: relative;
@@ -153,12 +179,17 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 40px 80px;
+    /* border-bottom: 2px solid red; */
+    
     
 }
 .content_box img{
     width: 540px;
     height: 270px;
+    border-radius: 9px;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.2);
     z-index: 1000;
+
 }
 .content_text{
     flex: 0.8;
@@ -175,15 +206,18 @@ body{
     font-size: 1.2rem;
     font-weight: 400;
     z-index: 10;
+    color: ;
 }
-.content_box:nth-child(2){
-    background: url('https://earthchoicepackaging.com/EarthChoice/yourChoice-banner.jpg');
-    color: #fff;
+ .content_box:nth-child(2){
+     background: url('https://earthchoicepackaging.com/EarthChoice/yourChoice-banner.jpg'); 
+    /* background: linear-gradient(40%, rgb(7, 50, 129), rgb(237, 26, 245)); */
+    color: rgba(255, 255, 255, 0.78);
+    background-color: linear-gradient(red,blue);
 }
 
 .content_box:nth-child(3){
     background: url('https://earthchoicepackaging.com/EarthChoice/expertise-banner.jpg');
-    color: #fff;
+    color: rgba(255, 255, 255, 0.78);
 }
 .content_box:nth-child(2)::before{
     content: "";
@@ -192,7 +226,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(74,119,41,0.875);
+    background: rgb(102, 205, 253);
     z-index: 0;
     opacity: 0.9;
 }
@@ -203,10 +237,10 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(230,78,2,.875);
+    background-color: rgba(247, 100, 173, 0.875);
     z-index: 0;
     opacity: 0.9;
-}
+} 
 
 .footer{
     position: relative;
@@ -215,6 +249,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     background-color: #111;
+    color: ;
 }
 .footer_content{
     position: relative;
