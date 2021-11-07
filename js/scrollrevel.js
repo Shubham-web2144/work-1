@@ -3,7 +3,7 @@
 const sr = ScrollReveal({
     origin: 'top',
     distance: '50px',
-    duration: 2000,
+    duration: 5000,
     reset: true
 });
 
@@ -40,4 +40,13 @@ sr.reveal('.footer_content', {
 sr.reveal('.banner_content', {
     delay: 100,
     duration: 1000
-})
+});
+
+sr.reveal('.products_text', {
+    delay: 150,
+    origin: 'top'
+});
+
+sr.reveal('.products_imgbox', {
+    origin: 'top',
+});

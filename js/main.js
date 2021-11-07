@@ -7,8 +7,11 @@ let headerNav = document.querySelector('.header_nav');
 let headerSearch = document.querySelector('.header_search');
 let navList = document.querySelectorAll('.header_nav ul li a');
 let listBox = document.querySelectorAll('.header_nav ul li ');
+let headerLogo = document.querySelector('.header_logo');
 
-
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+});
 
 inputBox.addEventListener('keypress', () => {
    headerSearch.classList.add('active');
@@ -26,5 +29,9 @@ listBox.forEach((ele) => {
         });
 
         ele.classList.add("active");
-    })
-})
+    });
+});
+
+headerLogo.addEventListener('click', () => {
+    window.location.href = "../index.html";
+});

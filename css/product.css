@@ -1,0 +1,36 @@
+.product_products{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 40px;
+}
+.product_category{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.product_productInfo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.product_productInfo img{
+    width: 60%;
+    height: 60%;
+}
+.product_productInfo p{
+    text-align: center;
+}
+.product_productInfo h3{
+    color: rgb(13, 94, 243);
+    margin-top: 15px;
+}
