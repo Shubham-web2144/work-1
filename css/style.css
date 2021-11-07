@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    /* overflow-y: scroll; */
     scroll-behavior: smooth;
 }
 body{
@@ -15,7 +16,7 @@ body{
     position: relative;
     width: 100vw;
     min-height: 100vh;
-    
+    overflow-x: hidden;
 }
 .header{
     position: fixed;
@@ -128,10 +129,14 @@ body{
 }
 .banner_content{
     position: absolute;
-    top: 50%;
+    width: 100%;
+    height: 100%;
+    /* top: 50%; */
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    /* line-height: 50%; */
+    /* z-index: 100; */
 }
 .banner_img{
     width: 100vw;
@@ -346,4 +351,42 @@ body{
 .products_imgbox p{
     font-size: 16px;
     font-weight: 800;
+}
+.social_icons{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 60px;
+    background-color: #f1f1f1;
+    padding: 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 24px 0px 24px;
+    box-shadow: 2px 3px 14px rgba(0,0,0,0.2);
+    border: 1px solid #ccc;
+}
+.social_icons.active{
+    right: -60px;
+}
+.social_icons a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.8em;
+}
+.fa-facebook-square{
+    color: rgb(3, 28, 170);
+}
+.fa-twitter-square{
+    color: rgb(3, 28, 170);
+}
+.fa-instagram-square{
+    color: rgb(197, 2, 93);
+}
+.fa-google-plus-square{
+    color: rgb(253, 82, 30);
+}
+.fa-youtube{
+    color: rgb(151, 3, 3);
 }

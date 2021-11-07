@@ -37,10 +37,10 @@ sr.reveal('.footer_content', {
     delay: 150
 });
 
-sr.reveal('.banner_content', {
-    delay: 100,
-    duration: 1000
-});
+// sr.reveal('.banner_content', {
+//     delay: 100,
+//     duration: 1000
+// });
 
 sr.reveal('.products_text', {
     delay: 150,

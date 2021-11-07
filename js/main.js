@@ -8,6 +8,7 @@ let headerSearch = document.querySelector('.header_search');
 let navList = document.querySelectorAll('.header_nav ul li a');
 let listBox = document.querySelectorAll('.header_nav ul li ');
 let headerLogo = document.querySelector('.header_logo');
+let socialIcons = document.querySelector('.social_icons');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -29,6 +30,7 @@ listBox.forEach((ele) => {
         });
 
         ele.classList.add("active");
+        headerNav.classList.remove('active');
     });
 });
 
