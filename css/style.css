@@ -133,6 +133,10 @@ body{
     transform: translate(-50%,-50%);
     text-align: center;
 }
+.banner_img{
+    width: 100vw;
+    height: 100vh;
+}
 .banner_img::after{
     content: '';
     position: absolute;
@@ -193,7 +197,7 @@ body{
 }
 .content_text{
     flex: 0.8;
-    z-index: 1000;
+    z-index: 100;
 }
 .content_text h3{
     font-size: 3.1rem;
@@ -249,14 +253,14 @@ body{
     flex-direction: column;
     align-items: flex-start;
     background-color: #111;
-    color: ;
+    /* color: ; */
 }
 .footer_content{
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: ;
+    /* align-items: ; */
     margin-top: 2em;
     color: #fff;
     font-weight: 400;

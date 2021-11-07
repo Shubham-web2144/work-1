@@ -1,5 +1,5 @@
 /* Breakpoint at 1024px */
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1300px){
     .header{
         padding: 8px 16px;
     }
@@ -40,7 +40,7 @@
     }
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 900px){
     .wrapper{
         overflow-x: hidden;
     }
@@ -146,5 +146,66 @@
     }
     .copyRight_text{
         font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .header_logo{
+        margin-left: 14px;
+        font-size: 1.5em;
+    }
+    .banner{
+        max-height: 100vh;
+        /* background-color: red; */
+    }
+    .banner_img{
+        height: 100vh;
+        object-fit: cover;
+    }
+    .banner_content h2{
+        font-size: 2em;
+    }
+    .banner_btn{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .banner_video{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    .content_box img{
+        width: 300px;
+        height: 200px;
+    }
+    .content_text h3{
+        font-size: 2em;
+    }
+    .content_text p{
+        font-size: 1em;
+    }
+    .footer_content{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .footer_contact{
+        text-align: left;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .footer_product,.footer_yChoice,.footer_experties{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .footer_product ul{
+        width: 100%;
+        text-align: center;
+        /* background-color: red; */
+    }
+    .footer_product ul li{
+        width: 100%;
+        text-align: left;
     }
 }
