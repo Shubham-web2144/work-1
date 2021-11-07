@@ -208,18 +208,18 @@ body{
     z-index: 10;
     color: ;
 }
- .content_box:nth-child(2){
+ .content_box:nth-child(3){
      background: url('https://earthchoicepackaging.com/EarthChoice/yourChoice-banner.jpg'); 
     /* background: linear-gradient(40%, rgb(7, 50, 129), rgb(237, 26, 245)); */
     color: rgba(255, 255, 255, 0.78);
     background-color: linear-gradient(red,blue);
 }
 
-.content_box:nth-child(3){
+.content_box:nth-child(1){
     background: url('https://earthchoicepackaging.com/EarthChoice/expertise-banner.jpg');
     color: rgba(255, 255, 255, 0.78);
 }
-.content_box:nth-child(2)::before{
+.content_box:nth-child(3)::before{
     content: "";
     position: absolute;
     top: 0;
@@ -230,7 +230,7 @@ body{
     z-index: 0;
     opacity: 0.9;
 }
-.content_box:nth-child(3)::before{
+.content_box:nth-child(1)::before{
     content: "";
     position: absolute;
     top: 0;
