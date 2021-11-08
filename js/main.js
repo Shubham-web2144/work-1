@@ -21,6 +21,7 @@ inputBox.addEventListener('keypress', () => {
 
 navIcon.addEventListener('click', () => {
     headerNav.classList.toggle('active');
+    header.classList.toggle('active');
 });
 
 listBox.forEach((ele) => {

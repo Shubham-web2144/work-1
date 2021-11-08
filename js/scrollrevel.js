@@ -4,7 +4,7 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '50px',
     duration: 5000,
-    reset: true
+    reset: false
 });
 
 
@@ -42,11 +42,13 @@ sr.reveal('.footer_content', {
 //     duration: 1000
 // });
 
-sr.reveal('.products_text', {
-    delay: 150,
-    origin: 'top'
+sr.reveal('.product_productInfo', {
+    origin: 'top',
+    delay: 100
 });
 
-sr.reveal('.products_imgbox', {
+sr.reveal('.contact_text', {
     origin: 'top',
-});
+    delay: 100
+
+})
