@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
+    <title>Experties</title>
+    <link
+      rel="shortcut icon"
+      href="../img/AmeriPackaging--Logo-C4.png"
+      type="image/x-icon"
+    />
 
-    <link rel="shortcut icon" href="../img/AmeriPackaging--Logo-C4.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/product.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
@@ -21,7 +24,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -35,8 +37,8 @@
         </div>
         <nav class="header_nav">
           <ul>
-            <li class="active"><a href="#product">Products</a></li>
-            <li><a href="./experties.html">Experties</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="#">Experties</a></li>
             <li><a href="./about.html">About Us</a></li>
             <li><a href="./contactus.html">Contact Us</a></li>
           </ul>
@@ -45,7 +47,7 @@
               <input
                 type="text"
                 class="input_box"
-                placeholder="Search here products..."
+                placeholder="Search here..."
               />
               <div class="search_icon">
                 <i class="fas fa-search"></i>
@@ -55,37 +57,25 @@
         </nav>
       </header>
 
-      <section class="banner">
-          <img src="https://earthchoicepackaging.com/EarthChoice/Products-Header_Image.jpg" alt="">
-      </section>
-
-      <section class="product_products" id="produc">
-          <div class="product_category">
-              <div class="product_productInfo" >
-                  <img src="../img/styrofoam.jfif" alt="" id="container">
-                  <h3 id="container">Styrofoam</h3>
-                  <p><strong>Styrofoam</strong> is a trademarked brand of closed-cell extruded <strong>polystyrene foam</strong> (XPS), commonly called "Blue Board", manufactured as foam continuous building insulation board used in walls, roofs, and foundations as thermal insulation and water barrier.</p>
-              </div>
-              <!-- <div class="product_productInfo" id="drinkware">
-                <img src="https://earthchoicepackaging.com/EarthChoice/ColdHotCups-Small2.jpg" alt="">
-                <h3>Drinkware</h3>
-                <p>If you’re looking for recyclability, use of PCR*, and want lots of options, EarthChoice products fit your sustainability needs.</p>
-            </div> -->
-          </div>
-
-          <!-- <div class="product_category">
-            <div class="product_productInfo" id="produc3">
-                <img src="https://earthchoicepackaging.com/EarthChoice/Containers-Small3.jpg" alt="">
-                <h3>Containers</h3>
-                <p>If you’re looking for recyclability, use of PCR*, and want lots of options, EarthChoice products fit your sustainability needs.</p>
-            </div>
-            <div class="product_productInfo" id='produc4'>
-              <img src="https://earthchoicepackaging.com/EarthChoice/ColdHotCups-Small2.jpg" alt="">
-              <h3>Drinkware</h3>
-              <p>If you’re looking for recyclability, use of PCR*, and want lots of options, EarthChoice products fit your sustainability needs.</p>
-          </div>
-        </div> -->
-      </section>
+      <div class="container" style="margin-top: 200px;">
+        <div class="alert alert-warning" role="alert">
+          <h4 class="alert-heading">Oops !!</h4>
+          <p>
+            Sorry This page is in production.
+          </p>
+          <hr />
+          <p class="mb-3">
+            Please reach this page after some time <br/>
+            Thank You 🙂
+          </p>
+          <p class="mb-2">
+              Click below for returning in home page
+            </p>
+          <button type="button" class="btn btn-primary">Home Page</button>
+  
+        </div>
+      </div>
+      
 
       <footer class="footer">
         <div class="footer_content">
@@ -94,22 +84,23 @@
             <h6>
               1740 Stebbins Dr.Houston, TX 77043
             </h6>
-            <a href="./contactus.html" class="footer_contactBtn">
-              Contact Us
-            </a>
+            <a href="./contactus.html" class="footer_contactBtn"> Contact Us </a>
           </div>
           <div class="footer_product">
             <h3 class="footer_title">Products</h3>
             <ul class="footer_list">
-              <li><a href="">Styrofoam</a></li>
-           </ul>
+              <li><a href="">Containers</a></li>
+              <!-- <li><a href="">Drinkware</a></li>
+              <li><a href="">TableTop</a></li>
+              <li><a href="">All Products</a></li> -->
+            </ul>
           </div>
           <div class="footer_yChoice">
             <h3 class="footer_title">Useful Links</h3>
             <ul class="footer_list">
               <li><a href="../index.html">Home</a></li>
               <li><a href="./about.html">About Us</a></li>
-              <li><a href="./experties.html">Experties</a></li>
+              <li><a href="#">Experties</a></li>
             </ul>
           </div>
           <div class="footer_experties">
@@ -135,7 +126,11 @@
 
     <script src="../boostrap/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 
-    <script src="../js/scrollrevel.js"></script>
-    <script src="../js/product.js"></script>
+    <script src="../boostrap/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+      <script>
+          document.querySelector('.btn-primary').addEventListener("click", () => {
+              window.location.href = '../index.html';
+          })
+      </script>
   </body>
 </html>

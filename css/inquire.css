@@ -1,0 +1,37 @@
+.inquire{
+    position: relative;
+    margin-top: 85px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.inquire_head{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    border-bottom: 2px solid #198736;
+    padding-bottom: 10px;
+}
+.inquire_head h2{
+    font-size: 3em;
+    font-family: "Lato", sans-serif;
+    color: #198736;
+}
+.inquire_form{
+    position: relative;
+    width: 100vw;
+    margin-top: 30px;
+    /* margin-left: 48px; */
+}
+.form_field select{
+    position: relative;
+    width: 20%;
+    height: 30px;
+    outline: none;
+    border: 1px solid black;
+}
+.form_field select:focus{
+    border: 2px solid #198736;
+}

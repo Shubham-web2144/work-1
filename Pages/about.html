@@ -4,16 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
+    <title>About Us</title>
 
     <link rel="shortcut icon" href="../img/AmeriPackaging--Logo-C4.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/product.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link
-      rel="stylesheet"
-      href="../boostrap/bootstrap-5.0.2-dist/css/bootstrap.min.css"
-    />
     <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/about.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -21,7 +17,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -35,9 +30,9 @@
         </div>
         <nav class="header_nav">
           <ul>
-            <li class="active"><a href="#product">Products</a></li>
+            <li><a href="./product.html">Products</a></li>
             <li><a href="./experties.html">Experties</a></li>
-            <li><a href="./about.html">About Us</a></li>
+            <li><a href="#">About Us</a></li>
             <li><a href="./contactus.html">Contact Us</a></li>
           </ul>
           <div class="header_search">
@@ -45,9 +40,9 @@
               <input
                 type="text"
                 class="input_box"
-                placeholder="Search here products..."
+                placeholder="Search here..."
               />
-              <div class="search_icon">
+              <div class="search_icon" type="submit">
                 <i class="fas fa-search"></i>
               </div>
             </form>
@@ -56,35 +51,32 @@
       </header>
 
       <section class="banner">
-          <img src="https://earthchoicepackaging.com/EarthChoice/Products-Header_Image.jpg" alt="">
+        <img
+          src="../img/C7 3D Logo Mockup.jpg"
+          alt=""
+          class="banner_img"
+        />
       </section>
 
-      <section class="product_products" id="produc">
-          <div class="product_category">
-              <div class="product_productInfo" >
-                  <img src="../img/styrofoam.jfif" alt="" id="container">
-                  <h3 id="container">Styrofoam</h3>
-                  <p><strong>Styrofoam</strong> is a trademarked brand of closed-cell extruded <strong>polystyrene foam</strong> (XPS), commonly called "Blue Board", manufactured as foam continuous building insulation board used in walls, roofs, and foundations as thermal insulation and water barrier.</p>
-              </div>
-              <!-- <div class="product_productInfo" id="drinkware">
-                <img src="https://earthchoicepackaging.com/EarthChoice/ColdHotCups-Small2.jpg" alt="">
-                <h3>Drinkware</h3>
-                <p>If you’re looking for recyclability, use of PCR*, and want lots of options, EarthChoice products fit your sustainability needs.</p>
-            </div> -->
-          </div>
+      <section class="about_content">
+          <h3>About Us</h3>
+          <div class="about_text">
+              <p>
+                Ameri Packaging is a manufacturer, exporter and wholesale supplier of Hand Wrap Stretch Film, Machine Wrap Stretch Film, Custom Made, all types of Poly Bag and 3PLY face mask all made in USA.
+              </p>
 
-          <!-- <div class="product_category">
-            <div class="product_productInfo" id="produc3">
-                <img src="https://earthchoicepackaging.com/EarthChoice/Containers-Small3.jpg" alt="">
-                <h3>Containers</h3>
-                <p>If you’re looking for recyclability, use of PCR*, and want lots of options, EarthChoice products fit your sustainability needs.</p>
-            </div>
-            <div class="product_productInfo" id='produc4'>
-              <img src="https://earthchoicepackaging.com/EarthChoice/ColdHotCups-Small2.jpg" alt="">
-              <h3>Drinkware</h3>
-              <p>If you’re looking for recyclability, use of PCR*, and want lots of options, EarthChoice products fit your sustainability needs.</p>
+              <p>
+                We offer one of the largest wholesale Stretch films, poly bags and 3ply face mask in the USA (we have a huge quantity in-stock packaging related items, including all sizes of poly bags ), all available for immediate shipping. If you need a custom size or custom printed plastic bags, no problem! We can customize any of your poly products to your exact specifications With our doorstep-direct, wholesale pricing, and 100% Quality material. We are the poly bag foundation for all types of industries including: hotels, Industrial, Retail, Manufacturing, Chemical, Electronic, Military, Pharmaceutical, Commercial, Agriculture, Food, Medical, Automotive, and Paper / Plastic & Packaging Wholesale Distributors.
+              </p>
+
+              <p>
+                Please feel free to <a href="./contactus.html">contact us</a> to see how we can help you. Chances are, we have a solution!
+              </p>
+
+              <p>
+                DragonPoly will go the extra mile to ensure our customers’ needs are met. We will STRETCH to exceed your expectations
+              </p>
           </div>
-        </div> -->
       </section>
 
       <footer class="footer">
@@ -94,18 +86,19 @@
             <h6>
               1740 Stebbins Dr.Houston, TX 77043
             </h6>
-            <a href="./contactus.html" class="footer_contactBtn">
+
+            <a href="../Pages/contactus.html" class="footer_contactBtn">
               Contact Us
             </a>
           </div>
           <div class="footer_product">
             <h3 class="footer_title">Products</h3>
             <ul class="footer_list">
-              <li><a href="">Styrofoam</a></li>
-           </ul>
+              <li><a href="./product.html">Styrofoam</a></li>
+            </ul>
           </div>
           <div class="footer_yChoice">
-            <h3 class="footer_title">Useful Links</h3>
+            <h3 class="footer_title">Useful Liks</h3>
             <ul class="footer_list">
               <li><a href="../index.html">Home</a></li>
               <li><a href="./about.html">About Us</a></li>
@@ -128,14 +121,10 @@
           <span class="copyRight_text"> &copy; 2021 All Right Reserved. </span>
         </div>
       </footer>
+
     </div>
 
+
     <script src="../js/main.js"></script>
-    <!-- Boostrap JS cdn -->
-
-    <script src="../boostrap/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-
-    <script src="../js/scrollrevel.js"></script>
-    <script src="../js/product.js"></script>
   </body>
 </html>

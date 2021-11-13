@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="/css/contactus.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="shortcut icon" href="../img/AmeriPackaging--Logo-C4.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/contactus.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
-      href="/boostrap/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+      href="../boostrap/bootstrap-5.0.2-dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -25,8 +27,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="header_logo">
-          <!-- websit logo -->
-          WebLogo
+          <img src="../img/AmeriPackaging--Logo-C4.png" alt="" class="logo" />
         </div>
         <div class="nav_icon">
           <i class="fas fa-bars"></i>
@@ -34,9 +35,9 @@
         </div>
         <nav class="header_nav">
           <ul>
-            <li><a href="/Pages/product.html">Products</a></li>
-            <li><a href="#">Experties</a></li>
-            <li><a href="#">Your Choice</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="./experties.html">Experties</a></li>
+            <li><a href="./about.html">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
           <div class="header_search">
@@ -56,8 +57,9 @@
 
       <section class="banner">
         <img
-          src="https://earthchoicepackaging.com/EarthChoice/Contact-Header_Images.jpg"
+          src="../img/C6 3D Logo Mockup.jpg"
           alt=""
+          class="banner_img"
         />
       </section>
 
@@ -68,12 +70,9 @@
             <p>For all inquiries please fill out the form below</p>
           </div>
           <div class="contact_add">
-            <h3>EarthChoice</h3>
+            <h3>AmeriPackaging</h3>
             <h5>
-              1900W.Field Court <br />
-              Lake Forest, lllinois 60045
-              <br />
-              USA
+              1740 Stebbins Dr.Houston, TX 77043
             </h5>
           </div>
         </div>
@@ -91,17 +90,32 @@
         </div>
         <div class="contact_input">
           <h5>What would you like to inquire about?</h5>
-          <form action="">
-            <select name="" class="contact_select">
-              <option value="">option 1</option>
-              <option value="">option 2</option>
-              <option value="">option 3</option>
-              <option value="">option 4</option>
-              <option value="">option 5</option>
-              <option value="">option 6</option>
-            </select>
+z
+          <form action="../php/contactForm.php" method="POST" enctype="multipart/form-data">
+            <div class="form_field">
+              <div class="form_field_1">
+                <div class="form_input">
+                  <label for="name">Name</label>
+                  <input type="text" class="form_input_field" name="fname" placeholder="Enter your name" />
+                </div>
+                <div class="form_input">
+                  <label for="mobile">Mobile No</label>
+                  <input type="text" class="form_input_field" name="fnum" placeholder="Enter your name" />
+                </div>
+              </div>
+            </div>
+            <div class="form_field">
+              <label for="email">Email</label>
+              <input type="email" class="form_inp" name="fmail" placeholder="Enter your email" />
+            </div>
+            <div class="form_field">
+              <label for="fmsg">Message</label>
+              <textarea name="fmsg" class="form_text" id="" cols="30" rows="8"></textarea>
+            </div>
 
-            <button type="submit" class="contact_button">Go</button>
+            <div class="form_btn">
+              <button type="submit">Submit</button>
+            </div>
           </form>
         </div>
       </section>
@@ -111,8 +125,7 @@
           <div class="footer_contact">
             <h3 class="footer_title">Contact Us</h3>
             <h6>
-              1900W Field Court <br />
-              Lake Forest Washington DC , USA
+              1740 Stebbins Dr.Houston, TX 77043
             </h6>
             <a href="#contact" class="footer_contactBtn"> Contact Us </a>
           </div>
@@ -120,15 +133,17 @@
             <h3 class="footer_title">Products</h3>
             <ul class="footer_list">
               <li><a href="">Containers</a></li>
-              <li><a href="">Drinkware</a></li>
+              <!-- <li><a href="">Drinkware</a></li>
               <li><a href="">TableTop</a></li>
-              <li><a href="">All Products</a></li>
+              <li><a href="">All Products</a></li> -->
             </ul>
           </div>
           <div class="footer_yChoice">
-            <h3 class="footer_title">Your Choice</h3>
+            <h3 class="footer_title">Useful Links</h3>
             <ul class="footer_list">
-              <li><a href="">Partners</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./experties.html">Experties</a></li>
             </ul>
           </div>
           <div class="footer_experties">
@@ -149,12 +164,12 @@
       </footer>
     </div>
 
-    <script src="/js/main.js"></script>
+    <script src="../js/main.js"></script>
     <!-- Boostrap JS cdn -->
 
-    <script src="/boostrap/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../boostrap/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 
     <!-- scroll revel -->
-    <script src="/js/scrollrevel.js"></script>
+    <script src="../js/scrollrevel.js"></script>
   </body>
 </html>

@@ -24,28 +24,31 @@ body{
 .header{
     position: fixed;
     width: 100%;
+    min-height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0,0,0,0.7);
+    background-color: #198736;
     padding: 12px 20px;
     border-bottom: 1px solid #ccc;
     z-index: 10000;
     box-shadow: -12px 0px 12px rgba(20,25,25, 0.04);
 }
-
+.header.active{
+    background-color: rgba(0,0,0,0.7);
+}
 .header_logo{
-    /* background: url('https://earthchoicepackaging.com/EarthChoice/logo.png'); */
-    /* background-position: center center;
-    background-repeat: no-repeat;
-    width: 160px;
-    height: 100px; */
-    margin-left: 4em;
+    position: relative;
+    width: 150px;
+    height: 125px;
     cursor: pointer;
-    /* color: red; */
-    font-size: 2em;
-    font-weight: 700;
-    color: #fff;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.header_logo .logo{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 .header_nav{
     display: flex;
@@ -65,16 +68,20 @@ body{
     border-radius: 4px;
     transition: 0.4s ease-in-out;
 }
+.header_nav ul li:hover{
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+}
 .header_nav ul li.active{
-    background-color: rgb(35, 103, 250);
+    background-color: #fff;
     transition:  0.3s ease-in-out;
 }
 .header_nav ul li.active a{
-    color: #f1f1f1;
+    color: #198736;
     font-weight: 400;
 }
 .header_nav ul li a{
-    color: #f1f1f1;
+    color: #fff;
     text-decoration: none;
     font-size: 1.4em;
 }
@@ -174,16 +181,13 @@ body{
 }
 .banner_btn{
     text-decoration: none;
-    background-color: rgb(35, 103, 250);
+    background-color: #198736;
     color: white;
     padding: 15px;
     border-radius: 7px;
     font-weight: 700;
 }
-.banner_btn:hover{
-    background-color: rgb(2, 38, 104);
-    color: #fff;
-}
+
 
 .main_content{
     position: relative;
@@ -224,7 +228,7 @@ body{
 }
 .content_text p{
     font-family: "Lato", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
     z-index: 10;
     color: ;
@@ -247,9 +251,9 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(102, 205, 253);
+    background: #198736;
     z-index: 0;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 .content_box:nth-child(1)::before{
     content: "";
@@ -258,9 +262,9 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(247, 100, 173, 0.875);
+    background-color: #198736;
     z-index: 0;
-    opacity: 0.9;
+    opacity: 0.8;
 } 
 
 .footer{
@@ -271,6 +275,15 @@ body{
     align-items: flex-start;
     background-color: #111;
     /* color: ; */
+}
+.footer_img{
+    position: relative;
+    width: 100%;
+    padding-left: 100px;
+}
+.footer_img img{
+    width: 200px;
+    height: 180px;
 }
 .footer_content{
     position: relative;
@@ -283,6 +296,7 @@ body{
     font-weight: 400;
     font-family: sans-serif;
     text-align: center;
+    padding: 20px;
 }
 .footer_list{
     list-style: none;
@@ -293,6 +307,7 @@ body{
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+    font-weight: 400;
 }
 .footer_contact h6{
     margin-bottom: 25px;
@@ -327,7 +342,7 @@ body{
     margin-bottom: 20px;
 }
 .products_text h2{
-    color: rgb(35, 103, 250);
+    color: #198736;
     font-weight: 600;
 }
 .products_text p{
@@ -363,6 +378,7 @@ body{
 .products_imgbox p{
     font-size: 16px;
     font-weight: 800;
+    color: #198736;
 }
 .social_icons{
     position: absolute;
@@ -402,3 +418,4 @@ body{
 .fa-youtube{
     color: rgb(151, 3, 3);
 }
+

@@ -9,14 +9,23 @@ let navList = document.querySelectorAll('.header_nav ul li a');
 let listBox = document.querySelectorAll('.header_nav ul li ');
 let headerLogo = document.querySelector('.header_logo');
 let socialIcons = document.querySelector('.social_icons');
+let wrapper = document.querySelector('.wrapper');
+let alert = document.querySelector('#alert');
 
-form.addEventListener('submit', (e) => {
+
+
+form.onsubmit = (e) => {
     e.preventDefault();
-});
+}
+
 
 inputBox.addEventListener('keypress', () => {
    headerSearch.classList.add('active');
    
+});
+
+window.addEventListener("scroll", () => {
+    // header.classList.toggle("active");
 });
 
 navIcon.addEventListener('click', () => {

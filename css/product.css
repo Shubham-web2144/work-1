@@ -24,13 +24,14 @@
     cursor: pointer;
 }
 .product_productInfo img{
-    width: 60%;
-    height: 60%;
+    width: 45%;
+    height: 45%;
 }
 .product_productInfo p{
     text-align: center;
 }
 .product_productInfo h3{
-    color: rgb(13, 94, 243);
+    color: #198736;
     margin-top: 15px;
+    font-weight: 550;
 }

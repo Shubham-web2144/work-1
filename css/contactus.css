@@ -43,35 +43,114 @@
     letter-spacing: 1px;
 }
 .contact_input{
+    position: relative;
     width: 100%;
+    display: flex;
+   flex-direction: column;
 }
 .contact_input h5{
     font-size: 1.3em;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 .contact_input form{
     width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 150px;
 }
-.contact_input form select{
-    flex: 1;
-    height: 30px;
+.contact_input form .form_field{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form_field .form_field_1{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    
+}
+.form_field .form_field_1 .form_input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    /* justify-content: space-between; */
+}
+.form_input_field{
+    width: 100%;
+    display: flex;
+}
+.form_input:nth-child(1){
+    flex: 0.6;
+    margin-right: 20px;
+}
+.form_input:nth-child(2){
+    flex: 0.4;
+}
+.form_field .form_inp, .form_field .form_text{
+    position: relative;
+    width: 70%;
+    padding: 8px 6px;
+    border: 1px solid black
+}
+input{
+    border: 1px solid black;
+
+}
+input:focus{
+    border: 2px solid #198736;
     outline: none;
 }
-.contact_input form button{
-    width: 50px;
-    height: 30px;
-    margin-left: 10px;
-    border: none;
+.form_field input:focus{
+    border: 2px solid #198736;
     outline: none;
-    background-color: rgb(29, 88, 250);
-    color: #fff;
-    font-weight: 500;
-    border-radius: 3px;
+}
+.form_field textarea:focus{
+    border: 2px solid #198736;
+    outline: none;
+}
+.form_input_field{
+    padding: 8px 6px;
+}
+.form_input_field:focus{
+    border: 2px solid #198736;
 }
 
+label{
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    color: #198736;
+    margin: 8px 0px;
+}
+.form_btn{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.form_btn button{
+    width: 180px;
+    height: 43px;
+    border-radius: 5px;
+    outline: none;
+    border: 3px solid #198736;
+    background-color: #fff;
+    color: #198736;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.form_btn button:hover{
+    background-color: #198736;
+    border: none;
+    color: #fff;
+
+}
 /* responsive code for banner text */
 
 @media only screen and (max-width: 900px){

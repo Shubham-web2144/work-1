@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Succesfully Submitted</title>
+
+    <link rel="shortcut icon" href="../img/AmeriPackaging--Logo-C4.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="../boostrap/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>
+          Aww yeah, you successfully read this important alert message. This
+          example text is going to run a bit longer so that you can see how
+          spacing within an alert works with this kind of content.
+        </p>
+        <hr />
+        <p class="mb-3">
+          Whenever you need to, be sure to use margin utilities to keep things
+          nice and tidy.
+        </p>
+        <p class="mb-2">
+            Click below for returning in home page
+          </p>
+        <button type="button" class="btn btn-success">Home Page</button>
+
+      </div>
+    </div>
+    <script src="../boostrap/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelector('.btn-success').addEventListener("click", () => {
+            window.location.href = '../index.html';
+        })
+    </script>
+  </body>
+</html>

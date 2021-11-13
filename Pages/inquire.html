@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales and Products</title>
+
+    <link rel="shortcut icon" href="../img/AmeriPackaging--Logo-C4.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/inquire.css" />
+    <link rel="stylesheet" href="../css/contactus.css" />
+    <!-- Fontaswsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header_logo">
+          <img src="../img/AmeriPackaging--Logo-C4.png" alt="" class="logo" />
+        </div>
+        <div class="nav_icon">
+          <i class="fas fa-bars"></i>
+          <!-- <i class="fas fa-times active"></i> -->
+        </div>
+        <nav class="header_nav">
+          <ul>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="./experties.html">Experties</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+          </ul>
+          <div class="header_search">
+            <form action="">
+              <input
+                type="text"
+                class="input_box"
+                placeholder="Search here..."
+              />
+              <div class="search_icon" type="submit">
+                <i class="fas fa-search"></i>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </header>
+
+      <section class="inquire">
+        <div class="inquire_head">
+          <h2>Sales and Products</h2>
+        </div>
+        <div class="inquire_form">
+          <div class="contact_input">
+            <form
+              action="../php/inquiry.php"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <div class="form_field">
+                <label for="fcate">Product Name</label>
+                <select name="category" id="">
+                  <option value="1">category-1</option>
+                  <option value="2">category-2</option>
+                  <option value="3">category-3</option>
+                </select>
+              </div>
+              <div class="form_field">
+                <label for="fname">First Name</label>
+                <input
+                  type="text"
+                  class="form_inp"
+                  name="fname"
+                  placeholder="Enter your first name"
+                  required
+                />
+              </div>
+              <div class="form_field">
+                <label for="text">Last Name</label>
+                <input
+                  type="text"
+                  class="form_inp"
+                  name="flname"
+                  placeholder="Enter your last name"
+                  required
+                />
+              </div>
+              <div class="form_field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form_inp"
+                  name="fmail"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form_field">
+                <label for="fnum">Phone Number</label>
+                <input
+                  type="text"
+                  class="form_inp"
+                  name="fnum"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+              <div class="form_field">
+                <label for="add">Address</label>
+                <input
+                  type="text"
+                  class="form_inp"
+                  name="fadd"
+                  placeholder="Enter your full address"
+                  required
+                />
+              </div>
+              <div class="form_field">
+                <label for="country">Country</label>
+                <input
+                  type="text"
+                  class="form_inp"
+                  name="fcountry"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form_field">
+                <label for="city">City</label>
+                <input
+                  type="text"
+                  class="form_inp"
+                  name="fcity"
+                  placeholder="Enter your city"
+                  required
+                />
+              </div>
+              <div class="form_field">
+                <label for="state">State</label>
+                <input
+                  type="text"
+                  class="form_inp"
+                  name="state"
+                  placeholder="Enter your state"
+                  required
+                />
+              </div>
+              <div class="form_field">
+                <label for="zip">Zip Code</label>
+                <input
+                  type="text"
+                  class="form_inp"
+                  name="fzip"
+                  placeholder="e.g 98103"
+                  required
+                />
+              </div>
+              <div class="form_field">
+                <label for="fmsg">Comments</label>
+                <textarea
+                  name="fcmnt"
+                  class="form_text"
+                  id=""
+                  cols="30"
+                  rows="8"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form_btn">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer_content">
+          <div class="footer_contact">
+            <h3 class="footer_title">Contact Us</h3>
+            <h6>
+              1740 Stebbins Dr.Houston, TX 77043
+            </h6>
+
+            <a href="../Pages/contactus.html" class="footer_contactBtn">
+              Contact Us
+            </a>
+          </div>
+          <div class="footer_product">
+            <h3 class="footer_title">Products</h3>
+            <ul class="footer_list">
+              <li><a href="./product.html">Styrofoam</a></li>
+            </ul>
+          </div>
+          <div class="footer_yChoice">
+            <h3 class="footer_title">Useful Liks</h3>
+            <ul class="footer_list">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./experties.html">Experties</a></li>
+            </ul>
+          </div>
+          <div class="footer_experties">
+            <h3 class="footer_title">Experties</h3>
+            <ul class="footer_list">
+              <li><a href="">Rescycling </a></li>
+              <li><a href="">Green Marketing</a></li>
+              <li><a href="">PDF Builder</a></li>
+              <li><a href="">Product Restrication</a></li>
+              <li><a href="">Virtual Packaging Asistance</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copy_right">
+          <span class="copyRight_text"> &copy; 2021 All Right Reserved. </span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+
+    <script>
+      document.querySelector("form").addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
